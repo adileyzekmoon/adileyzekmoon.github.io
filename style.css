@@ -13,7 +13,7 @@ html, body, header, #intro {
 
 #intro {
     background:-webkit-linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,.5)), url("Cover.jpg") no-repeat center center fixed;
-    background-size: contain;
+    background-size: cover;
 }
 
 
