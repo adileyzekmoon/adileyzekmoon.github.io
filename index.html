@@ -12,7 +12,7 @@
 
 <body data-spy="scroll" data-target="#navbar">
     <header>
-        <nav id="navbar" class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+        <nav id="navbar" class="navbar navbar-expand-md navbar-light bg-light fixed-top">
             <a class="navbar-brand" href="#">eyzekmoon</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -57,11 +57,11 @@
             <div class="container-fluid d-flex align-items-center justify-content-center h-100">
                 <div class="row d-flex justify-content-center text-center">
                     <div class="col-md-10">
-                        <h2 class="display-4 font-weight-bold text-dark pt-5 mb-2">Adil Eyzekmoon</h2>
+                        <h2 class="display-4 font-weight-bold text-light pt-5 mb-2">Adil Eyzekmoon</h2>
 
-                        <h4 class="text-dark my-4">Climber. Tinkerer. Traveler.</h4>
+                        <h4 class="text-light my-4">Climber. Tinkerer. Traveler.</h4>
 
-                        <a class="nav-link" href="#bio"><button type="button" class="btn btn-outline-dark">Read more</button></a>
+                        <a class="nav-link" href="#bio"><button type="button" class="btn btn-outline-light">Read more</button></a>
                     </div>
                 </div>
             </div>
@@ -69,9 +69,9 @@
         </div>
     </header>
 
-    <main class="mt-5">
+    <main class="pt-5" id="content" style="background-color:rgb(20,20,20); color:rgb(235,235,235)">
         <section id="bio" class="text-center">
-            <h2 class="mb-5">Bio</h2>
+            <h2 class="mb-5" id="testscroll">Bio</h2>
 
             <div class="container-fluid">
 
@@ -105,10 +105,10 @@
         </section>
         <hr />
         <section id="skills" class="text-center">
-            <h2 class="mb-5">Skills</h2>
+            <h2 class="mb-5" id="skillscroll">Skills</h2>
             <ul class="nav nav-tabs mb-3 mx-auto" role="tablist">
                 <li class="nav-item">
-                    <a class="nav-link active" id="climbing-tab" data-toggle="tab" href="#personal" role="tab" aria-controls="climbing" aria-selected="true">Inter-personal</a>
+                    <a class="nav-link active" id="personal-tab" data-toggle="tab" href="#personal" role="tab" aria-controls="climbing" aria-selected="true">Inter-personal</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" id="software-tab" data-toggle="tab" href="#software" role="tab" aria-controls="software" aria-selected="false">Programming</a>
@@ -154,7 +154,7 @@
                     </div>
                 </div>
 
-                <div class="tab-pane fade show active" id="personal" role="tabpanel" aria-labelledby="climbing-tab">
+                <div class="tab-pane fade show active" id="personal" role="tabpanel" aria-labelledby="personal-tab">
                     <h3>Communication</h3>
                     <div class="progress m-4">
                         <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning" style="width: 85%"></div>
@@ -173,7 +173,7 @@
         <hr />
 
         <section id="experience" class="text-center">
-            <h2 class="mb-5">Experience</h2>
+            <h2 class="mb-5" id="expscroll">Experience</h2>
             <div class="container-fluid">
                 <div class="row d-flex justify-content-center text-center align-items-center mb-4">
                     <div class="col-md-2">
@@ -210,126 +210,31 @@
 
         <hr />
 
-        <section id="portfolio" class="text-center">
+<!--
+        <section id="portfolio" class="text-center p-5">
             <h2 class="mb-5">Portfolio</h2>
 
             <div id="carouselControls" class="carousel slide w-100 mx-auto" data-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
                         <img src="CG3002-components.png" class="mx-auto d-block w-100" alt="...">
-                        <button type="button" class="btn btn-sm btn-dark carousel-caption mx-auto" data-toggle="modal" data-target="#cg3002-modal">Description</button>
-                        <div class="modal fade" id="cg3002-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                            <div class="modal-dialog" role="document">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h5 class="modal-title" id="exampleModalLabel">CG3002 Wearable</h5>
-                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                            <span aria-hidden="true">&times;</span>
-                                        </button>
-                                    </div>
-                                    <div class="modal-body">
-                                        A wearable designed and built to detect and differentiate between a predetermined list of dance moves.<br>
-                                        Utilised flex sensors and 9-axis motion processing units for input data. Raspberry Pi and Arduino microprocessers were used for computation and communication.
-                                    </div>
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn btn-secondary mx-auto" data-dismiss="modal">Close</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        
                     </div>
                     <div class="carousel-item">
                         <img src="Addressbook-UI.png" class="mx-auto d-block w-100" alt="...">
-                        <button type="button" class="btn btn-sm btn-dark carousel-caption mx-auto" data-toggle="modal" data-target="#cs2103-modal">Description</button>
-                        <div class="modal fade" id="cs2103-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                            <div class="modal-dialog" role="document">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h5 class="modal-title" id="exampleModalLabel">CS2103 Addressbook</h5>
-                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                            <span aria-hidden="true">&times;</span>
-                                        </button>
-                                    </div>
-                                    <div class="modal-body">
-                                        An addressbook application written in Java.<br>
-                                        Includes basic functionality such as filter functions that differentiated contacts by address, name, groups, tags etc.
-                                    </div>
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn btn-secondary mx-auto" data-dismiss="modal">Close</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        
                     </div>
                     <div class="carousel-item">
                         <img src="React_API_Challenge.PNG" class="mx-auto d-block w-100" alt="...">
-                        <button type="button" class="btn btn-sm btn-dark carousel-caption mx-auto" data-toggle="modal" data-target="#react-modal">Description</button>
-                        <div class="modal fade" id="react-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                            <div class="modal-dialog" role="document">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h5 class="modal-title" id="exampleModalLabel">React API Challenge</h5>
-                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                            <span aria-hidden="true">&times;</span>
-                                        </button>
-                                    </div>
-                                    <div class="modal-body">
-                                        Web Application challenge by CodeForAsia<br>
-                                        Built using node.js, React, MongoDB and Express. Searches, saves and displays cards that hold information on Github user information.
-                                    </div>
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn btn-secondary mx-auto" data-dismiss="modal">Close</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        
                     </div>
                     <div class="carousel-item">
                         <img src="Pokemon_Team_Builder.PNG" class="mx-auto d-block w-100" alt="...">
-                        <button type="button" class="btn btn-sm btn-dark carousel-caption mx-auto" data-toggle="modal" data-target="#pokemon-modal">Description</button>
-                        <div class="modal fade" id="pokemon-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                            <div class="modal-dialog" role="document">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h5 class="modal-title" id="exampleModalLabel">Pokemon Team Builder</h5>
-                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                            <span aria-hidden="true">&times;</span>
-                                        </button>
-                                    </div>
-                                    <div class="modal-body">
-                                        Personal project: Pokemon Team Builder<br>
-                                        Built using Python and Flask. Pokemon team builder focussed on building a well rounded team based on Pokemon typing.
-                                    </div>
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn btn-secondary mx-auto" data-dismiss="modal">Close</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        
                     </div>
                     <div class="carousel-item">
                         <img src="PMS_Combined.png" class="mx-auto d-block w-100" alt="...">
                         <button type="button" class="btn btn-sm btn-dark carousel-caption mx-auto" data-toggle="modal" data-target="#fyp-modal">Description</button>
-                        <div class="modal fade" id="fyp-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                            <div class="modal-dialog" role="document">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h5 class="modal-title" id="exampleModalLabel">Final Year Project - Physiotherapy Monitoring System</h5>
-                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                            <span aria-hidden="true">&times;</span>
-                                        </button>
-                                    </div>
-                                    <div class="modal-body">
-                                        FYP - Physiotherapy Monitoring System<br>
-                                        Web application built using MERN stack. Takes input depth images from a connected Microsoft Kinect camera. Depth image is fed into a Convolutional Neural Network machine learning model that classifies it into appropriate level of recovery progress.<br>
-                                        Machine learning model trained using Python libraries and deployed onto backend directly using relevant node.js libraries.
-                                    </div>
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn btn-secondary mx-auto" data-dismiss="modal">Close</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
                     </div>
                 </div>
                 <a class="carousel-control-prev" href="#carouselControls" role="button" data-slide="prev">
@@ -343,12 +248,178 @@
             </div>
 
         </section>
-
-
+        
+        <hr />
+-->
+        
+        <section id="portfolio" class="text-center">
+            <h2 class="mb-5">Portfolio</h2>
+            <div class="container-fluid d-flex align-items-center justify-content-center">
+                <div class="row">
+                    <div class="col">
+                        <div class="card m-5" >
+                            <img class="card-img-top" src="PMS_Combined.png" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">FYP - Physiotherapy Monitoring System</h5>
+                                <p class="card-text">Full stack web development + machine learning</p>
+                                <button type="button" class="btn btn-sm btn-dark mx-auto" data-toggle="modal" data-target="#fyp-modal">Description</button>
+                                <div class="modal fade" id="fyp-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLabel">Final Year Project - Physiotherapy Monitoring System</h5>
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body">
+                                                FYP - Physiotherapy Monitoring System<br>
+                                                Web application built using MERN stack. Takes input depth images from a connected Microsoft Kinect camera. Depth image is fed into a 
+                                                onvolutional Neural Network machine learning model that classifies it into appropriate level of recovery progress.<br>
+                                                Machine learning model trained using Python libraries and deployed onto backend directly using relevant node.js libraries.
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary mx-auto" data-dismiss="modal">Close</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card m-5">
+                            <img class="card-img-top" src="CG3002-components.png" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">CG3002 Wearable Device</h5>
+                                <p class="card-text">Hardware implmentation</p>
+                                <button type="button" class="btn btn-sm btn-dark mx-auto" data-toggle="modal" data-target="#cg3002-modal">Description</button>
+                                <div class="modal fade" id="cg3002-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLabel">CG3002 Wearable</h5>
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body">
+                                                A wearable designed and built to detect and differentiate between a predetermined list of dance moves.<br>
+                                                Utilised flex sensors and 9-axis motion processing units for input data. Raspberry Pi and Arduino microprocessers were used for computation 
+                                                nd communication.
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary mx-auto" data-dismiss="modal">Close</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card m-5">
+                            <img class="card-img-top" src="React_API_Challenge.PNG" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">React API Challenge</h5>
+                                <p class="card-text">Full stack web development</p>
+                                <button type="button" class="btn btn-sm btn-dark mx-auto" data-toggle="modal" data-target="#react-modal">Description</button>
+                                <div class="modal fade" id="react-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLabel">React API Challenge</h5>
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body">
+                                                Web Application challenge by CodeForAsia<br>
+                                                Built using node.js, React, MongoDB and Express. Searches, saves and displays cards that hold information on Github user information.
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary mx-auto" data-dismiss="modal">Close</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="card m-5">
+                            <img class="card-img-top" src="Addressbook-UI.png" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">CS2103 Addressbook</h5>
+                                <p class="card-text">Java development</p>
+                                <button type="button" class="btn btn-sm btn-dark mx-auto" data-toggle="modal" data-target="#cs2103-modal">Description</button>
+                                <div class="modal fade" id="cs2103-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLabel">CS2103 Addressbook</h5>
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body">
+                                                An addressbook application written in Java.<br>
+                                                Includes basic functionality such as filter functions that differentiated contacts by address, name, groups, tags etc.
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary mx-auto" data-dismiss="modal">Close</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card m-5">
+                            <img class="card-img-top" src="Pokemon_Team_Builder.PNG" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Personal Project</h5>
+                                <p class="card-text">Python + Flask Personal Project</p>
+                                <button type="button" class="btn btn-sm btn-dark mx-auto" data-toggle="modal" data-target="#pokemon-modal">Description</button>
+                                <div class="modal fade" id="pokemon-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLabel">Pokemon Team Builder</h5>
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body">
+                                                Personal project: Pokemon Team Builder<br>
+                                                Built using Python and Flask. Pokemon team builder focussed on building a well rounded team based on Pokemon typing.
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary mx-auto" data-dismiss="modal">Close</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            
+            
+            
+            
+        </section>
+        
+        
         <hr />
         <section id="contact" class="text-center">
-            <h2 class="mb-5">Contact Us (Not functioning currently)</h2>
-
+            <h2 class="mb-5">Contact Me (Not functioning currently)</h2>
+            
             <div class="container-fluid">
                 <form class="m-2">
                     <div class="form-group row">
@@ -417,7 +488,61 @@
                 };
             });
         });
+        
+//        $(document).scroll(function() {
+//           if($(window).scrollTop() > 2000){
+//
+//            $("#content").css("background","gray");
+//            $("#content").css("color","white");
+//            $("#header").hide();
+//            $("#header2").show();
+//
+//           }else if($(window).scrollTop() < 2000){
+//
+//            $("#content").css("background","white");
+//            $("#content").css("color","black");
+//            $("#header2").hide();
+//            $("#header").show();
+//
+//           }
+//        });
     
+    </script>
+    <script type="text/javascript">
+        
+        const [red, green, blue] = [20,20,20]
+        const content = document.getElementById("content")
+        const navbar = document.getElementById("navbar")
+        
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset < 1000){
+                content.style.backgroundColor = `rgb(${red}, ${green}, ${blue})`
+                content.style.color = `rgb(${255-r}, ${255-g}, ${255-b})`
+            }   
+            if (window.pageYOffset > 1000){
+                const y = (window.pageYOffset - 1000) * (235/350)
+                //            const [r, g, b] = [red/y, green/y, blue/y].map(Math.round)
+                const [r, g, b] = [(red + y), (green + y), (blue + y)].map(Math.round)
+                content.style.backgroundColor = `rgb(${r}, ${g}, ${b})`
+                content.style.color = `rgb(${255-r}, ${255-g}, ${255-b})`
+                if (r > 245){
+                    navbar.classList.remove("navbar-light")
+                    navbar.classList.remove("bg-light")
+                    navbar.classList.add("navbar-dark")
+                    navbar.classList.add("bg-dark")
+                }
+                if (r < 100){
+                    navbar.classList.remove("navbar-dark")
+                    navbar.classList.remove("bg-dark")
+                    navbar.classList.add("navbar-light")
+                    navbar.classList.add("bg-light")
+                }
+            }
+//            document.getElementById("testscroll").innerHTML = window.pageYOffset
+//            document.getElementById("expscroll").innerHTML = window.pageYOffset
+//            document.getElementById("skillscroll").innerHTML = window.pageYOffset
+        })
+        
     </script>
 
 

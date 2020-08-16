@@ -12,7 +12,7 @@ html, body, header, #intro {
 */
 
 #intro {
-    background:-webkit-linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,.5)), url("Cover.jpg") no-repeat center center fixed;
+    background:-webkit-linear-gradient(rgba(0,0,0,.9), rgba(0,0,0,.9)), url("Cover.jpg") no-repeat center center fixed;
     background-size: cover;
 }
 
