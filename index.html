@@ -75,7 +75,7 @@
         </div>
     </header>
 
-    <main class="pt-5" id="content" style="background-color:rgb(20,20,20); color:rgb(235,235,235)">
+    <main class="pt-5" id="content" style="background-color:rgb(10,10,10); color:rgb(245,245,245)">
         <section id="bio" class="text-center paddedlink">
             <h2 class="mb-5 testext" id="testscroll">Bio</h2>
 
@@ -490,7 +490,7 @@
 <!--script for dynamic background-->
     <script type="text/javascript">
         
-        const [red, green, blue] = [20,20,20]
+        const [red, green, blue] = [10,10,10]
         const content = document.getElementById("content")
         const navbar = document.getElementById("navbar")
         const logo = document.getElementById("logo")
@@ -501,12 +501,12 @@
                 content.style.color = `rgb(${255-red}, ${255-green}, ${255-blue})`
             }   
             if (window.pageYOffset > 1100){
-                const y = (window.pageYOffset - 1100) * (235/350)
+                const y = (window.pageYOffset - 1100) * (245/350)
                 //            const [r, g, b] = [red/y, green/y, blue/y].map(Math.round)
                 const [r, g, b] = [(red + y), (green + y), (blue + y)].map(Math.round)
                 content.style.backgroundColor = `rgb(${r}, ${g}, ${b})`
                 content.style.color = `rgb(${255-r}, ${255-g}, ${255-b})`
-                if (r > 118){
+                if (r > 122){
                     navbar.classList.remove("navbar-light")
                     navbar.classList.remove("bg-light")
                     navbar.classList.add("navbar-dark")
@@ -514,7 +514,7 @@
                     logo.classList.remove("text-dark")
                     logo.classList.add("text-light")
                 }
-                if (r < 117){
+                if (r < 123){
                     navbar.classList.remove("navbar-dark")
                     navbar.classList.remove("bg-dark")
                     navbar.classList.add("navbar-light")
