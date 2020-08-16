@@ -20,3 +20,20 @@ html, body, header, #intro {
 html {
   scroll-behavior: smooth;
 }
+
+/*
+#testext{
+    position:relative;
+    left: -200px;
+}
+*/
+
+.testext{
+    position: relative;
+    left: -2000px
+}
+
+.paddedlink{
+    position: relative;
+    padding-top: 100px;
+}
