@@ -45,10 +45,15 @@
                         <a class="nav-link" href="#contact">Contact</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Links</a>
+                        <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Resume</a>
                         <div class="dropdown-menu">
                             <a class="dropdown-item" href="AdilResumeColored-updated2020.pdf" target="_blank">Resume - Colored and Simplified</a>
                             <a class="dropdown-item" href="Resume-updatedAug2020.pdf" target="_blank">Resume - Extensive</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Links</a>
+                        <div class="dropdown-menu">
                             <a class="dropdown-item" href="https://www.facebook.com/Adil-Azmoon-374304659771994/" target="_blank"><i class="fa fa-facebook-square"></i></a>
                             <a class="dropdown-item" href="https://www.linkedin.com/in/adileyzekmoon/" target="_blank"><i class="fa fa-linkedin-square"></i></a>
                             <a class="dropdown-item" href="https://www.instagram.com/adileyzekmoon/" target="_blank"><i class="fa fa-instagram"></i></a>
@@ -77,31 +82,31 @@
 
     <main class="pt-5" id="content" style="background-color:rgb(10,10,10); color:rgb(245,245,245)">
         <section id="bio" class="text-center paddedlink">
-            <h2 class="mb-5 testext" id="testscroll">Bio</h2>
+            <h2 class="mb-5 testext1" id="testscroll">Bio</h2>
 
             <div class="container-fluid">
 
                 <div class="row d-flex justify-content-center mb-4">
-                    <div class="col-md-8 testext">
+                    <div class="col-md-8 testext2">
                         <p>Computer Engineering at National University of Singapore. Bachelor of Engineering with Honours (Merit). Modern technology is a delicate marriage of hardware and software. It is my goal to be both an experienced engineer and a proficient developer such that I can appreciate both sides of technology.
                         </p>
                     </div>
                 </div>
 
                 <div class="row">
-                    <div class="col-md-4 testext">
+                    <div class="col-md-4 testext3">
                         <i class="fa fa-heart fa-4x text-danger"></i>
                         <h4 class="my-4">Climbing</h4>
                         <p>Avid rock climber. Certified climbing instructor. Singapore National Representative 2018.</p>
                     </div>
 
-                    <div class="col-md-4 testext">
+                    <div class="col-md-4 testext4">
                         <i class="fa fa-laptop fa-4x text-warning"></i>
                         <h4 class="my-4">Technology</h4>
                         <p>Strong passion in software development. Learning about the various facets of full stack development excites me. Pythonian programmer with experience in MERN full stack development. Keen on front end development.</p>
                     </div>
 
-                    <div class="col-md-4 testext">
+                    <div class="col-md-4 testext5">
                         <i class="fa fa-user fa-4x text-dark"></i>
                         <h4 class="my-4">Me</h4>
                         <p>To every problem there is a solution. I believe the key is to take a step back to find it. I am extremely confident in keeping a level head and working towards the best case scenario in times of pressure.</p>
@@ -201,7 +206,8 @@
                         <img src="SPF_Logo.png" alt="SPF logo" class="img-fluid">
                     </div>
                     <div class="col-md-4">
-                        <h3>Operations Support Officer</h3>
+                        <h3>Operations Support Officer </h3>
+                        <h3>(National Service)</h3>
                     </div>
                     <div class="col-md-6">
                         <ul>
@@ -469,14 +475,22 @@
         $(window).scroll(function () {
             if ($(this).scrollTop() > 300) {
                 if (displayed == false){
-                    $(".testext").animate({left:'0px'});
+                    $(".testext1").animate({left:'0px'});
+                    $(".testext2").delay(100).animate({left:'0px'});
+                    $(".testext5").delay(200).animate({left:'0px'});
+                    $(".testext4").delay(300).animate({left:'0px'});
+                    $(".testext3").delay(400).animate({left:'0px'});
                     displayed = true;
                     console.log('testin');
                 }
             }
-            else if ($(this).scrollTop() < 300) {
+            else if ($(this).scrollTop() < 600) {
                 if (displayed == true){
-                    $(".testext").animate({left:'-1500px'});
+                    $(".testext5").animate({left:'-2000px'});
+                    $(".testext4").delay(100).animate({left:'-2000px'});
+                    $(".testext3").delay(200).animate({left:'-2000px'});
+                    $(".testext2").delay(300).animate({left:'-2000px'});
+                    $(".testext1").delay(400).animate({left:'-2000px'});
                     displayed = false;
                     console.log('testout');
                 }

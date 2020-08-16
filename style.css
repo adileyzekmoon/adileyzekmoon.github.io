@@ -38,20 +38,33 @@ html {
 }
 */
 
-.testext{
+.testext1{
     position: relative;
-    left: -2000px
+    left: -2000px;
+    overflow: hidden; 
+}
+.testext2{
+    position: relative;
+    left: -2000px;
+    overflow: hidden;
+}
+.testext3{
+    position: relative;
+    left: -2000px;
+    overflow: hidden;
+}
+.testext4{
+    position: relative;
+    left: -2000px;
+    overflow: hidden;
+}
+.testext5{
+    position: relative;
+    left: -2000px;
+    overflow: hidden;
 }
 
 .paddedlink{
     position: relative;
     padding-top: 100px;
-}
-
-.modal-fullscreen{
-  width: 100%;
-  height: 100%;
-  margin: 0;
-  top: 0;
-  left: 0;
 }
