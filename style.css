@@ -13,7 +13,22 @@ html, body, header, #intro {
 
 #intro {
     background:-webkit-linear-gradient(rgba(0,0,0,.9), rgba(0,0,0,.9)), url("Cover.jpg") no-repeat center center fixed;
-    background-size: contain;
+    background-size: cover;
+}
+
+#intro:after{
+      content:"";
+      position:fixed; /* stretch a fixed position to the whole screen */
+      top:0;
+      height:100vh; /* fix for mobile browser address bar appearing disappearing */
+      left:0;
+      right:0;
+      z-index:-1; /* needed to keep in the background */
+      background: -webkit-linear-gradient(rgba(0,0,0,.9), rgba(0,0,0,.9)), url("Cover.jpg") no-repeat center center;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
 }
 
 
