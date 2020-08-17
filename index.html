@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/color/jquery.color-2.1.2.js"></script>
     <script src="https://kit.fontawesome.com/978b63f316.js" crossorigin="anonymous"></script>
     
     
@@ -464,6 +465,7 @@
         });    
     </script>
     
+    <!--script for dynamic animation(Jquery)-->
     <script>
 //        $('#bio').hover(function() {
 //            $('.testext').animate({left:'0px'});
@@ -473,6 +475,7 @@
         var displayed = false;
         
         $(window).scroll(function () {
+
             if ($(this).scrollTop() > 300) {
                 if (displayed == false){
                     $(".testext1").animate({left:'0px'});
@@ -495,13 +498,45 @@
                     console.log('testout');
                 }
             }
-        })
+            
+        }
+                        )
+        
+    </script>
+    
+    <!--script for dynamic theme (Jquery)-->
+    <script>
+//        $('#bio').hover(function() {
+//            $('.testext').animate({left:'0px'});
+//            console.log('test');
+//        })
+        
+        var darktheme = true;
+        
+        $(window).scroll(function () {
+            if ($(this).scrollTop() > 1000) {
+                if (darktheme == true){
+                    $("#content").animate({backgroundColor: "white",
+                                           color: "black"});
+                    darktheme = false;
+                }
+            }
+            else if ($(this).scrollTop() < 1300) {
+                if (darktheme == false){
+                    $("#content").animate({backgroundColor: "rgb(10,10,10)",
+                                           color: "rgb(245,245,245)"});
+                    darktheme = true;
+                }
+            }
+        }
+                        )
         
     </script>
     
 
     
 <!--script for dynamic background-->
+<!--
     <script type="text/javascript">
         
         const [red, green, blue] = [10,10,10]
@@ -543,6 +578,7 @@
         })
         
     </script>
+-->
 
 
 </body>
