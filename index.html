@@ -465,7 +465,7 @@
         });    
     </script>
     
-    <!--script for dynamic animation(Jquery)d-->
+    <!--script for dynamic animation(Jquery)-->
     <script>
 //        $('#bio').hover(function() {
 //            $('.testext').animate({left:'0px'});
@@ -518,13 +518,18 @@
                 if (darktheme == true){
                     $("#content").animate({backgroundColor: "white",
                                            color: "black"});
+                    $("#navbar").removeClass("navbar-light bg-light").addClass("navbar-dark bg-dark");
+                    $("#logo").removeClass("text-dark").addClass("text-light");
                     darktheme = false;
+                    console.log('testtheme')
                 }
             }
             else if ($(this).scrollTop() < 1300) {
                 if (darktheme == false){
                     $("#content").animate({backgroundColor: "rgb(10,10,10)",
                                            color: "rgb(245,245,245)"});
+                  $("#navbar").removeClass("navbar-dark bg-dark").addClass("navbar-light bg-light");
+                    $("#logo").removeClass("text-light").addClass("text-dark");
                     darktheme = true;
                 }
             }
